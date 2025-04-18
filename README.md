@@ -61,3 +61,5 @@ The EM algorithm saves visualizations of each iteration in the `images/` folder.
 
 ![Gaussian Mixture Animation](https://github.com/paulbouuu/EM_gaussian_mixture/raw/main/examples/optimal_gaussian_mixture.gif)
 
+### License
+This project is free to use and modify under the MIT License. See the [LICENSE](LICENSE) file for details.
