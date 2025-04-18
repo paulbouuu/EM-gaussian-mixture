@@ -59,7 +59,5 @@ You can test the algorithm and generate visualizations with the included noteboo
 
 The EM algorithm saves visualizations of each iteration in the `images/` folder. Once training completes, it generates an animated GIF (`gaussian_mixture.gif`) illustrating how the Gaussians fit the data over time.
 
-<p align="center">
-  <img src="https://github.com/paulbouuu/EM_gaussian_mixture/main/optimal_gaussian_mixture.gif" alt="Gaussian Mixture Animation" width="500"/>
-</p>
+![Gaussian Mixture Animation](https://github.com/paulbouuu/EM_gaussian_mixture/raw/main/examples/optimal_gaussian_mixture.gif)
 
