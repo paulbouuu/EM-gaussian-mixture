@@ -129,7 +129,7 @@ class MoG:
             angle = np.degrees(np.arctan2(eigvecs[1, 0], eigvecs[0, 0]))
             width, height = 2 * n_std * np.sqrt(eigvals)
 
-            color = cmap(i % cmap.N)
+            color = cmap((i + 1) % cmap.N)  # (i + 1) to avoid blue, works while k < 10
             ell = Ellipse(mean, width, height, angle=angle,
                           edgecolor=color, facecolor='none', linewidth=2)
             ax.add_patch(ell)
