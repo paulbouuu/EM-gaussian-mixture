@@ -4,6 +4,8 @@ This project implements the Expectation-Maximization (EM) algorithm to fit a 2D 
 
 The class `MoG` implements the EM algorithm for the MoG. It is inside [MoG.py](MoG.py). An example of how to use it is provided in the Jupyter notebook [EM_algorithm.ipynb](EM_algorithm.ipynb).
 
+All the theory behind the EM algorithm is explained in detail in the pdf [EM_algorithm_for_MoG.pdf](resources/EM_algorithm_for_MoG.pdf).
+
 ---
 
 ## 🚀 Features
@@ -22,7 +24,7 @@ The class `MoG` implements the EM algorithm for the MoG. It is inside [MoG.py](M
 ├── MoG.py                # EM algorithm for MoG
 ├── utils.py              # GIF generation & data generation
 ├── images/               # Saved plots for each iteration (will be created during the first run)
-├── examples/             # GIF examples
+├── resources/            # GIF examples and pdf on the theory
 ├── gaussian_mixture.gif  # Output animation (will be created during the first run)
 ├── EM_algorithm.ipynb    # Example usage in Jupyter
 └── README.md
@@ -59,7 +61,7 @@ You can test the algorithm and generate visualizations with the included noteboo
 
 The EM algorithm saves visualizations of each iteration in the `images/` folder. Once training completes, it generates an animated GIF (`gaussian_mixture.gif`) illustrating how the Gaussians fit the data over time.
 
-![Gaussian Mixture Animation](https://github.com/paulbouuu/EM_gaussian_mixture/raw/main/examples/optimal_gaussian_mixture.gif)
+![Gaussian Mixture Animation](https://github.com/paulbouuu/EM_gaussian_mixture/raw/main/resources/optimal_gaussian_mixture.gif)
 
 ### License
 This project is free to use and modify under the MIT License. See the [LICENSE](LICENSE) file for details.
