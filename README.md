@@ -1,0 +1,65 @@
+# EM Algorithm for 2D Mixture of Gaussians
+
+This project implements the Expectation-Maximization (EM) algorithm to fit a 2D Mixture of Gaussians (MoG). It includes dynamic visualization of the algorithm's progress over iterations and can generate an animated GIF showing how the clusters evolve.
+
+The class `MoG` implements the EM algorithm for the MoG. It is inside [MoG.py](MoG.py). An example of how to use it is provided in the Jupyter notebook [EM_algorithm.ipynb](EM_algorithm.ipynb).
+
+---
+
+## 🚀 Features
+
+- Implements EM for Gaussian mixtures in 2D
+- Visualizes Gaussian components using ellipses
+- Optional creation of a GIF animation
+- Minimal dependencies
+
+---
+
+## 📁 Repository Structure
+
+```
+.
+├── MoG.py                # EM algorithm for MoG
+├── utils.py              # GIF generation & data generation
+├── images/               # Saved plots for each iteration (will be created during the first run)
+├── examples/             # GIF examples
+├── gaussian_mixture.gif  # Output animation (will be created during the first run)
+├── EM_algorithm.ipynb    # Example usage in Jupyter
+└── README.md
+```
+
+---
+
+## 📦 Requirements
+
+- Numpy
+- Matplotlib
+- Scipy
+- Pillow  (if you set `create_gif=True`)
+
+---
+
+## 🧪 How to Run
+
+You can test the algorithm and generate visualizations with the included notebook `EM_algorithm.ipynb`. This repo has been designed to be simple to undersand and modify.
+
+## Documentation:
+
+**_class_ `MoG`:**
+- **Parameters:**
+    - `k` (`int`): number of clusters, default is `3`
+    - `domain` (`list`): domain of the data, default is `[-5, 5]`
+
+**Other parameters:**
+- `iterations` : number of iterations of the EM algorithm
+- `plotting` : whether to display the plot interactively
+- `create_gif` : whether to create a GIF animation of the results (needs pillow package)
+
+## 📈 Output
+
+The EM algorithm saves visualizations of each iteration in the `images/` folder. Once training completes, it generates an animated GIF (`gaussian_mixture.gif`) illustrating how the Gaussians fit the data over time.
+
+<p align="center">
+  <img src="https://github.com/paulbouuu/EM_gaussian_mixture/raw/main/optimal_gaussian_mixture.gif" alt="Gaussian Mixture Animation" width="500"/>
+</p>
+

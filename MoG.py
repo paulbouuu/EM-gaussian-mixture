@@ -14,9 +14,7 @@ class MoG:
 
         Parameters:
             - k (int): number of clusters
-            - mu (np.ndarray): means of the Gaussians
-            - sigma (np.ndarray): covariance matrices of the Gaussians
-            - pi (np.ndarray): cluster weights
+            - domain (list): domain of the data
         """
         self.k = k
         self.domain = domain
@@ -98,9 +96,6 @@ class MoG:
     def log_likelihood(self):
         """
         Computes the log-likelihood of the data given the current parameters.
-
-        Parameters:
-            - X (np.ndarray): input data
         """
         log_likelihood = 0
 
