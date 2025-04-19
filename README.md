@@ -43,7 +43,7 @@ All the theory behind the EM algorithm is explained in detail in the pdf [EM_alg
 
 ## 🧪 How to Run
 
-You can test the algorithm and generate visualizations with the included notebook `EM_algorithm.ipynb`. This repo has been designed to be simple to undersand and modify.
+You can test the algorithm and generate visualizations with the included notebook `EM_algorithm.ipynb`. This repo has been designed to be simple to understand and modify.
 
 ## Documentation:
 
